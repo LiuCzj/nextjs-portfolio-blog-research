@@ -286,17 +286,17 @@ export default async function Page(props: {
       )}
 
       {/* Education Section */}
-      {educationItems && educationItems.length > 0 && (
+      {/* {educationItems && educationItems.length > 0 && (
         <section id="education">
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">{t("sections.education")}</h2>
             <Education educations={educationItems} />
           </div>
         </section>
-      )}
+      )} */}
 
       {/* Work Section */}
-      {Array.isArray(workItems) && workItems.length > 0 && (
+      {/* {Array.isArray(workItems) && workItems.length > 0 && (
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">
@@ -305,7 +305,7 @@ export default async function Page(props: {
             <Work work={workItems} />
           </div>
         </section>
-      )}
+      )} */}
 
       {/* Awards Section */}
       {awardsItems && awardsItems.length > 0 && (
@@ -316,7 +316,7 @@ export default async function Page(props: {
       )}
 
       {/* Academic Services Section */}
-      {((Array.isArray(reviewerConferences) &&
+      {/*{((Array.isArray(reviewerConferences) &&
         reviewerConferences.length > 0) ||
         (Array.isArray(reviewerJournals) && reviewerJournals.length > 0) ||
         (Array.isArray(teachingItems) && teachingItems.length > 0)) && (
@@ -339,10 +339,10 @@ export default async function Page(props: {
             />
           </div>
         </section>
-      )}
+      )}*/}
 
       {/* Invited Talks Section */}
-      {invitedTalksItems && invitedTalksItems.length > 0 && (
+      {/*{invitedTalksItems && invitedTalksItems.length > 0 && (
         <section id="invited-talks">
           <div className="flex min-h-0 flex-col gap-y-3">
             <h2 className="text-xl font-bold">
@@ -351,7 +351,7 @@ export default async function Page(props: {
             <Talks talks={invitedTalksItems} showAllText={t("showAll")} />
           </div>
         </section>
-      )}
+      )}*/}
 
       {/* Contact Section */}
       <section id="contact">

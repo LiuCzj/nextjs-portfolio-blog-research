@@ -160,16 +160,16 @@ export default async function Page(props: {
         {jsonldScript(personJsonLd)}
         <BlurFade delay={0}>
           <Brief
-            name={t("name.full")}
-            firstName={t("name.given")}
-            surname={t("name.family")}
-            initials={t("name.initials")}
-            subtitle={t("subtitle")}
-            description={t("headline")}
+            name="锦创AI"
+            firstName="锦创"
+            surname="AI"
+            initials="JA"
+            subtitle="AI 技术博主"
+            description="专注机器学习、深度学习与时间序列分析，既写技术复盘，也做科普入门。"
             avatarUrl={siteConfig.avatarUrl}
             className="mx-auto w-full max-w-2xl space-y-8"
             locale={locale}
-          />
+        />
         </BlurFade>
       </section>
 
@@ -187,7 +187,15 @@ export default async function Page(props: {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <div className="prose text-muted-foreground dark:prose-invert max-w-full font-sans text-sm text-pretty [&_img]:my-0 [&_img]:inline-block [&_img]:h-[1em] [&_img]:w-auto [&_img]:align-baseline">
-            <CustomReactMarkdown>{t("bioMarkdown")}</CustomReactMarkdown>
+            <CustomReactMarkdown>
+              {`你好，我是锦创AI的创作者，一名长期穿梭在数据与算法之间的AI从业者。
+
+              **核心领域**：机器学习、深度学习、时间序列分析、计算机视觉、数据分析。
+
+              写这个博客的初衷：把看似高深的AI知识拆解成每个人都能看懂的内容，同时也记录自己在实际项目中的思考与复盘。
+
+              相信好的技术分享应该让同行有收获，让大众看得懂。`}
+            </CustomReactMarkdown>
           </div>
         </BlurFade>
       </section>
